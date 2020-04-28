@@ -1,6 +1,8 @@
 import React from 'react'
 import axios from 'axios'
-import Table from './Table'
+import SearchTable from './SearchTable'
+import RepoTable from './RepoTable'
+import './style.css'
 
 class User extends React.Component{
     constructor(props){
@@ -9,8 +11,11 @@ class User extends React.Component{
             name:'',
             language:'',
             userData:[],
-            isdata:false,
+            repoData:[],
+            isSearchData:false,
+            isRepoData:false,
             isrepo:false,
+            isLoading:false,
         }
     }
 
@@ -21,11 +26,19 @@ class User extends React.Component{
     }
 
     handleSelect=(e)=>{
-        (e.target.value==='repo')?this.setState({isrepo:true}):this.setState({isrepo:false})
+        (e.target.value==='repo')
+                    ?
+        this.setState({isrepo:true,isSearchData:false,isRepoData:false})
+                    :
+        this.setState({isrepo:false,isSearchData:false,isRepoData:false})
     }
 
     handleSubmit=(e)=>{
         e.preventDefault()
+        this.setState({
+            isLoading:true
+        })
+
         if(!this.state.isrepo){
             const {name}=this.state
             const requestParams={
@@ -41,12 +54,14 @@ class User extends React.Component{
                     const data = res.data.items
                     this.setState({
                         userData:[...data],
-                        isdata:true
+                        isSearchData:true,
+                        isLoading:false,
                     })
                 }
             })
             .catch(error=>console.log(error))
         }
+
         else{
             const {name,language} = this.state
             const requestParams = {
@@ -54,17 +69,19 @@ class User extends React.Component{
                 url:'https://api.github.com/search/repositories',
                 params:{
                     q:name,
-                    language:language
+                    language:language,
                 }
             }
             axios(requestParams)
             .then(res=>{
                 if(res){
-                    const data = res.data.items.map(element=>element.owner)
+                    const data = res.data.items
                     this.setState({
-                        userData:[...data],
-                        isdata:true
+                        repoData:[...data],
+                        isRepoData:true,
+                        isLoading:false
                     })
+                    // console.log(data)
                 }
             })
         }
@@ -78,14 +95,15 @@ class User extends React.Component{
             // isrepo:false,
         })
     }
+
     render(){
         return(
             <div className="container">
-                <h1 className="text-center my-3">GitHub User Search</h1>
-                <div className="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 my-3">
+                <h1 className="text-center border px-5 py-1 bg-color text-light display-4 rounded my-1"><i>GitHub User Search</i></h1>
+                <div className="col-10 offset-1 col-md-8 offset-md-2 col-lg-8 offset-lg-2 my-3">
                     <form onSubmit={this.handleSubmit}>
                         <div className="form-group">
-                            <select className="form-control" onClick={this.handleSelect} required>
+                            <select name="searchBy" value={this.state.searchBy} className="form-control" onClick={this.handleSelect} required>
                                 <option value="">Search By</option>
                                 <option value="user">UserName</option>
                                 <option value="repo">Repository</option>
@@ -104,7 +122,20 @@ class User extends React.Component{
                         </div>
                     </form>
                 </div>
-                {this.state.isdata && <Table tabdata={this.state.userData}/>}
+                {this.state.isLoading &&    <div class="text-center my-3">
+                                                <div class="spinner-grow text-muted"></div>
+                                                <div class="spinner-grow text-primary"></div>
+                                                <div class="spinner-grow text-success"></div>
+                                                <div class="spinner-grow text-info"></div>
+                                                <div class="spinner-grow text-warning"></div>
+                                                <div class="spinner-grow text-danger"></div>
+                                                <div class="spinner-grow text-secondary"></div>
+                                                <div class="spinner-grow text-dark"></div>
+                                                <div class="spinner-grow text-light"></div>
+                                            </div> 
+                }
+                {!this.state.isLoading && this.state.isSearchData && <SearchTable tabdata={this.state.userData}/>}
+                {!this.state.isLoading && this.state.isRepoData && <RepoTable repo={this.state.repoData}/>}
             </div>
         )
     }
