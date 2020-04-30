@@ -4,20 +4,32 @@ class Model extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            isshow:false
+            isShow:false
         }
+    }
+    handleClick=()=>{
+        this.setState({
+            isShow:!this.state.isShow
+        })
     }
     render(){
         return(
             <div>
-                <Button>open Modal</Button>
-                <Modal show={true}>
-                    <Modal.Header>this is Header</Modal.Header>
-                    <Modal.Body>This is body</Modal.Body>
+                <Button onClick={this.handleClick}>Display Profile</Button>
+                <Modal show={this.state.isShow} onHide={this.handleClick} >
+                    <Modal.Header closeButton>
+                        <h2 className="text-center">Login :{this.props.name}</h2>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className="text-center">
+                            <img src={this.props.pic} alt="picture" height='450' width='100%'/>
+                            <h4 className="mt-2">ID: {this.props.id}</h4>
+                            <h4>Score: {this.props.score}</h4>
+                        </div>
+                    </Modal.Body>
                     <Modal.Footer>
-                        <Button>
-                            Close Modal
-                        </Button>
+                        <Button onClick={this.handleClick} className="mr-auto">Close Modal</Button>
+                        <Button onClick={this.handleClick} className="bg-dark">Hide Model</Button>
                     </Modal.Footer>
                 </Modal>
             </div>

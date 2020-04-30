@@ -1,4 +1,6 @@
 import React from 'react'
+import Model from './Model'
+
 class Table extends React.Component{
     render(){
         return(
@@ -23,7 +25,7 @@ class Table extends React.Component{
                                     <td className="pt-5">{element.id}</td>
                                     <td className="pt-5"><a href={element.html_url} target="blank">External Github</a></td>
                                     <td className="pt-5"><a href={element.repos_url} target="blank" className="text-decoration-none">Repos</a></td>
-                                    <td className="pt-5"><button className="btn btn-primary">Profile Information</button></td>
+                                    <td className="pt-5"><Model name={element.login} pic={element.avatar_url} id={element.id} score={element.score}/></td>
                                 </tr>
                             )}
                         </tbody>
