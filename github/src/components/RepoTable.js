@@ -1,4 +1,6 @@
 import React from 'react'
+import Model from './Model'
+
 class RepoTable extends React.Component{
     render(){
         return(
@@ -24,7 +26,8 @@ class RepoTable extends React.Component{
                                 <td className="pt-5">{element.created_at}</td>
                                 <td className="pt-5">{element.forks_count}</td>
                                 <td className="pt-5"><a href={element.owner.html_url} target="blank">External Link</a></td>
-                                <th className="pt-5"><button className="btn btn-primary">Display Profile</button></th>
+                                <th className="pt-5"><Model nameLabel="Repo Name" name={element.name} pic={element.owner.avatar_url}
+                                                            id={element.id} label="Created at" score={element.created_at}/></th>
                             </tr>
                         )}
                     </tbody>
