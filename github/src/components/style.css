@@ -1,3 +1,8 @@
+.backGnd{
+    background-image: url('https://wallpapercave.com/wp/wp3082259.png');
+    background-size: cover;
+    padding-bottom:12%
+}
 .bg-color{
     background-color:rgb(61,68,172)
 }

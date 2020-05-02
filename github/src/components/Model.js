@@ -22,7 +22,7 @@ class Model extends React.Component{
                     </Modal.Header>
                     <Modal.Body>
                         <div className="text-center">
-                            <img src={this.props.pic} alt="picture" height='420' width='100%'/>
+                            <img src={this.props.pic} alt="..." height='420' width='100%'/>
                             <h4 className="mt-2">ID: {this.props.id}</h4>
                             <h4>{this.props.label} : {this.props.score}</h4>
                         </div>
