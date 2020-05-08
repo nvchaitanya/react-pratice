@@ -1,19 +1,16 @@
-import React from "react";
-import {store} from './Redux/store'
-import {addCounter,reduceCounter} from './Redux/action'
+import React from 'react'
+import store from './store'
+import {add_counter , dec_counter} from './action'
 
-export default class App extends React.Component{
-  componentDidMount(){
-    store.subscribe(()=> this.forceUpdate())
-  }
-  render(){
-    return (
-      <div>
-        <h1>count</h1>
-        <h2>{store.getState()}</h2>
-        <button onClick={()=>store.dispatch(addCounter(1))}>ADD</button>
-        <button onClick={()=>store.dispatch(reduceCounter(1))}>REDUCE</button>
-      </div>
-    );
-  }
+class App extends React.Component{
+    render(){
+        return(
+            <div>
+                <h1>count : {store.getState().count}</h1>
+                <button onClick={() => store.dispatch(add_counter(1))}>Increment</button>
+                <button onClick={() => store.dispatch(dec_counter(1))}>Decrement</button>
+            </div>
+        )
+    }
 }
+export default App
