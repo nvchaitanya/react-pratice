@@ -53,7 +53,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:6,
+            id:7,
             title:"NG38003PP05C Tees Sports Watch",
             price:599,
             rating:4.7,
@@ -62,7 +62,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:7,
+            id:8,
             title:"NG38003PP05C Tees Analog Watch ",
             price:699,
             rating:4.2,
@@ -71,7 +71,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:8,
+            id:9,
             title:"NG38003PP05C Sports Watch",
             price:899,
             rating:4.2,
@@ -80,7 +80,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:9,
+            id:10,
             title:"NG38003PP05C Tees Analog Watch",
             price:699,
             rating:4.2,
@@ -89,7 +89,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:10,
+            id:11,
             title:"NG38003PP05C Tees Analog Watch - For Men & Women",
             price:1699,
             rating:4.2,
@@ -149,7 +149,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:6,
+            id:7,
             title:"NG38003PP05C Tees Sports Watch",
             price:599,
             rating:4.7,
@@ -158,7 +158,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:7,
+            id:8,
             title:"NG38003PP05C Tees Analog Watch ",
             price:699,
             rating:4.2,
@@ -167,7 +167,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:8,
+            id:9,
             title:"NG38003PP05C Sports Watch",
             price:899,
             rating:4.2,
@@ -176,7 +176,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:9,
+            id:10,
             title:"NG38003PP05C Tees Analog Watch",
             price:699,
             rating:4.2,
@@ -185,7 +185,7 @@ const initState={
         {
             category:"watches",
             count:1,
-            id:10,
+            id:11,
             title:"NG38003PP05C Tees Analog Watch - For Men & Women",
             price:1699,
             rating:4.2,
@@ -204,6 +204,26 @@ export const reducer = (state=initState, { type,payload }) => {
     
     switch(type) { 
 
+        case ADD_PRODUCT:
+            return {
+                ...state,
+                data:[...state.data,payload],
+                tempData:[...state.data]
+            }
+
+        case DELETE_PRODUCT:
+            return{
+                ...state,
+                data:state.data.filter(element => element.id !== payload),
+                tempData : state.data
+            }
+        case EDIT_PRODUCT:{
+            return{
+                ...state,
+                data:state.data.map(element=> element.id===payload.id ? payload : element),
+                tempData:state.data
+            }
+        }
         case LOGIN:
             return{
                 ...state,
@@ -211,5 +231,7 @@ export const reducer = (state=initState, { type,payload }) => {
                 userType:payload
             }
 
+        default:
+            return state
     }
 }
