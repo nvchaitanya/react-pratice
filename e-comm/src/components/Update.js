@@ -21,8 +21,7 @@ export class Update extends React.Component{
     }
     componentDidMount(){
         let id = this.props.match.params.id
-        let data = this.props.data.filter(element => element.id === id)
-        console.log('Hi',id)
+        let data = this.props.data.filter(element => element.id === Number(id))
         this.setState({
             title:data[0].title,
             price:data[0].price,
