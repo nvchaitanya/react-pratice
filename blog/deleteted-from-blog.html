@@ -1,0 +1,1508 @@
+<div class='col-lg-3' id='sidebar-wrapper'>
+    <b:section class='sidebar' id='sidebar' preferred='yes'>
+      <b:widget id='BlogSearch43' locked='false' title='SEARCH' type='BlogSearch' version='1'>
+        <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                    <h2 class='title'><data:title/></h2>
+                </b:if>
+
+                <div class='widget-content'>
+                    <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+                        <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+                            <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+                            <div class='input-group'>
+                                <input autocomplete='off' class='gsc-input form-control' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
+                                <div class='input-group-append'>
+                                    <input class='gsc-search-button btn btn-info' expr:value='data:messages.search' title='search' type='submit'/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <b:include name='quickedit'/>
+            </b:includable>
+      </b:widget>
+      <b:widget id='HTML67' locked='false' title='LATEST' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>3-latest-65px</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                    <h2 class='title'><data:title/></h2>
+                </b:if>
+                <div class='widget-content'>
+                    <data:content/>
+                </div>
+
+                <b:include name='quickedit'/>
+            </b:includable>
+      </b:widget>
+      <b:widget id='FollowByEmail35' locked='false' title='SUBSCRIBE-desc:Subscribe for Free!' type='FollowByEmail' version='1'>
+        <b:includable id='main'>
+                <b:if cond='data:title != &quot;&quot;'><h2 class='title'><data:title/></h2></b:if>
+                <div class='widget-content'>
+                    <div class='follow-by-email-inner'>
+                        <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+                            <table width='100%'>
+                                <tr>
+                                    <td>
+                                        <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+                                    </td>
+                                    <td width='64px'>
+                                        <input class='follow-by-email-submit' type='submit' value='Submit'/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input expr:value='data:feedPath' name='uri' type='hidden'/>
+                            <input name='loc' type='hidden' value='en_US'/>
+                        </form>
+                    </div>
+                </div>
+                <span class='item-control blog-admin'>
+                    <b:include name='quickedit'/>
+                </span>
+            </b:includable>
+      </b:widget>
+      <b:widget id='HTML66' locked='false' title='FOLLOW ME' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>&lt;ul&gt;
+                    &lt;a href=&quot;https://www.youtube.com/c/USER_NAME&quot;&gt;&lt;i class=&quot;fa fa-youtube  d-flex justify-content-center align-items-center&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href=&quot;https://facebook.com/USER_NAME&quot;&gt;&lt;i class=&quot;fa fa-facebook  d-flex justify-content-center align-items-center&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href=&quot;https://twitter.com/USER_NAME&quot;&gt;&lt;i class=&quot;fa fa-twitter  d-flex justify-content-center align-items-center&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;a href=&quot;https://instagram.com/USER_NAME&quot;&gt;&lt;i class=&quot;fa fa-instagram  d-flex justify-content-center align-items-center&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;/ul&gt;</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+                <!-- only display title if it's non-empty -->
+                <b:if cond='data:title != &quot;&quot;'>
+                    <h2 class='title'><data:title/></h2>
+                </b:if>
+                <div class='widget-content'>
+                    <data:content/>
+                </div>
+
+                <b:include name='quickedit'/>
+            </b:includable>
+      </b:widget>
+      <b:widget id='Label1' locked='false' title='SECCIONS' type='Label' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+          <b:widget-setting name='display'>LIST</b:widget-setting>
+          <b:widget-setting name='selectedLabelsList'>Business,Fashion,Food,Music,Photography,Technology</b:widget-setting>
+          <b:widget-setting name='showType'>ALL</b:widget-setting>
+          <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+                <b:if cond='data:title != &quot;&quot;'>
+                    <h2><data:title/></h2>
+                </b:if>
+                <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+                    <b:if cond='data:display == &quot;list&quot;'>
+                        <ul>
+                            <b:loop values='data:labels' var='label'>
+                                <li>
+                                    <b:if cond='data:blog.url == data:label.url'>
+                                        <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+                                        <b:else/>
+                                        <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+                                    </b:if>
+                                    <b:if cond='data:showFreqNumbers'>
+                                        <span dir='ltr'>(<data:label.count/>)</span>
+                                    </b:if>
+                                </li>
+                            </b:loop>
+                        </ul>
+                        <b:else/>
+                        <b:loop values='data:labels' var='label'>
+                            <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+                                <b:if cond='data:blog.url == data:label.url'>
+                                    <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+                                    <b:else/>
+                                    <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+                                </b:if>
+                                <b:if cond='data:showFreqNumbers'>
+                                    <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+                                </b:if>
+                            </span>
+                        </b:loop>
+                    </b:if>
+                    <b:include name='quickedit'/>
+                </div>
+            </b:includable>
+      </b:widget>
+      <b:widget id='Profile1' locked='false' title='ABOUT' type='Profile' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='showaboutme'>true</b:widget-setting>
+          <b:widget-setting name='showlocation'>false</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+                <b:if cond='data:title != &quot;&quot;'>
+                    <h2><data:title/></h2>
+                </b:if>
+                <div class='widget-content'>
+                    <b:if cond='data:team'> <!-- team blog profile -->
+                        <ul>
+                            <b:loop values='data:authors' var='i'>
+                                <li><a class='profile-name-link g-profile' expr:href='data:i.userUrl' expr:style='&quot;background-image: url(&quot; + data:i.profileLogo + &quot;);&quot;'><data:i.display-name/></a></li>
+                            </b:loop>
+                        </ul>
+
+                        <b:else/> <!-- normal blog profile -->
+
+                        <b:if cond='data:photo.url != &quot;&quot;'>
+                            <a expr:href='data:userUrl'><img class='profile-img' expr:alt='data:messages.myPhoto' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/></a>
+                        </b:if>
+
+                        <dl class='profile-datablock'>
+                            <dt class='profile-data'>
+                                <a class='profile-name-link g-profile' expr:href='data:userUrl' expr:style='&quot;background-image: url(&quot; + data:profileLogo + &quot;);&quot;' rel='author'>
+                                    <data:displayname/>
+                                </a>
+                                <b:if cond='data:hasgoogleprofile'>
+                                    <br/>
+                                    <div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
+                                </b:if>
+                            </dt>
+
+                            <b:if cond='data:showlocation'>
+                                <dd class='profile-data'><data:location/></dd>
+                            </b:if>
+
+                            <b:if cond='data:aboutme != &quot;&quot;'><dd class='profile-textblock'><data:aboutme/></dd></b:if>
+                        </dl>
+                        <a class='profile-link' expr:href='data:userUrl' rel='author'><data:viewProfileMsg/></a>
+                    </b:if>
+
+                    <b:include name='quickedit'/>
+                </div>
+            </b:includable>
+      </b:widget>
+      <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
+        <b:widget-settings>
+          <b:widget-setting name='copyright'/>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content' style='text-align: center;'>
+<b:if cond='data:attribution != &quot;&quot;'>
+<data:attribution/>
+</b:if>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML23' locked='false' title='Facebook' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<center><div class="fb-page" data-href="https://www.facebook.com/soratemplates/" data-width="360" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div></center>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML26' locked='false' mobile='yes' title='Looped Slider' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'/>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='sliderwrapper'>
+<script>
+document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/Slider?max-results=&quot;+numposts8+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=showrecentposts\&quot;&gt;&lt;\/script&gt;&quot;);
+</script>
+</div>
+<div class='pagination' id='paginate-slider1'>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='ReportAbuse1' locked='false' title='' type='ReportAbuse'>
+        <b:includable id='main'>
+<b:include name='reportAbuse'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='FeaturedPost1' locked='false' title='' type='FeaturedPost'>
+        <b:widget-settings>
+          <b:widget-setting name='showSnippet'>true</b:widget-setting>
+          <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+          <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+          <b:widget-setting name='useMostRecentPost'>true</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- Only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<b:include name='content'/>
+
+<b:include name='quickedit'/>
+</b:includable>
+        <b:includable id='content'>
+<div class='post-summary'>
+<b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
+<h3><a expr:href='data:postUrl'><data:postTitle/></a></h3>
+</b:if>
+<b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
+<p>
+<data:postSummary/>
+</p>
+</b:if>
+<b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
+<img class='image' expr:src='data:postFirstImage'/>
+</b:if>
+</div>
+
+<style type='text/css'>
+.image {
+width: 100%;
+}
+</style>
+</b:includable>
+      </b:widget>
+      <b:widget id='BlogSearch1' locked='false' title='Search This Blog' type='BlogSearch'>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+
+<div class='widget-content'>
+<div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+<form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+<b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+<table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+<tbody>
+<tr>
+<td class='gsc-input'>
+<input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
+</td>
+<td class='gsc-search-button'>
+<input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='showStyle'>MENU</b:widget-setting>
+          <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+          <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+          <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+          <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+          <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+          <b:widget-setting name='chronological'>false</b:widget-setting>
+          <b:widget-setting name='showPosts'>false</b:widget-setting>
+          <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:title'>
+<h2><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+<b:if cond='data:style == &quot;HIERARCHY&quot;'>
+<b:include data='data' name='interval'/>
+</b:if>
+<b:if cond='data:style == &quot;FLAT&quot;'>
+<b:include data='data' name='flat'/>
+</b:if>
+<b:if cond='data:style == &quot;MENU&quot;'>
+<b:include data='data' name='menu'/>
+</b:if>
+</div>
+</div>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+        <b:includable id='flat' var='data'>
+<ul class='flat'>
+<b:loop values='data:data' var='i'>
+<li class='archivedate'>
+<a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+</li>
+</b:loop>
+</ul>
+</b:includable>
+        <b:includable id='interval' var='intervalData'>
+<b:loop values='data:intervalData' var='i'>
+<ul class='hierarchy'>
+<li expr:class='&quot;archivedate &quot; + data:i.expclass'>
+<b:include data='i' name='toggle'/>
+<a class='post-count-link' expr:href='data:i.url'><data:i.name/></a>
+<span class='post-count' dir='ltr'>(<data:i.post-count/>)</span>
+<b:if cond='data:i.data'>
+<b:include data='i.data' name='interval'/>
+</b:if>
+<b:if cond='data:i.posts'>
+<b:include data='i.posts' name='posts'/>
+</b:if>
+</li>
+</ul>
+</b:loop>
+</b:includable>
+        <b:includable id='menu' var='data'>
+<select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+<option value=''><data:title/></option>
+<b:loop values='data:data' var='i'>
+<option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+</b:loop>
+</select>
+</b:includable>
+        <b:includable id='posts' var='posts'>
+<ul class='posts'>
+<b:loop values='data:posts' var='i'>
+<li><a expr:href='data:i.url'><data:i.title/></a></li>
+</b:loop>
+</ul>
+</b:includable>
+        <b:includable id='toggle' var='interval'>
+<b:if cond='data:interval.toggleId'>
+<b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<b:else/>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+<b:if cond='data:blog.languageDirection == &quot;rtl&quot;'>
+&#9668;&#160;
+<b:else/>
+&#9658;&#160;
+</b:if>
+</span>
+</a>
+</b:if>
+</b:if>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML10' locked='false' title='Find Us On Facebook' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>&lt;center&gt;&lt;div class=&quot;fb-padding&quot;&gt;&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = &quot;//connect.facebook.net/pt_BR/sdk.js#xfbml=1&amp;version=v2.3&amp;appId=1395743857335531&quot;;
+fjs.parentNode.insertBefore(js, fjs);
+}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+&lt;div class=&quot;fb-page&quot; data-href=&quot;https://www.facebook.com/soratemplates&quot; data-width=&quot;300&quot; data-height=&quot;230&quot; data-hide-cover=&quot;false&quot; data-show-facepile=&quot;true&quot; data-show-posts=&quot;false&quot;&gt;&lt;div class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/center&gt;</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'>
+<data:title/>
+</h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML11' locked='false' title='Advertisement' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<center><img alt="Ads" src="//3.bp.blogspot.com/-uv5_KkS7oSM/Vib-kJkyWpI/AAAAAAAABag/Ntvn1QpneiI/s1600-r/ad4.png"/></center>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'>
+<data:title/>
+</h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML12' locked='false' title='Featured Video' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<center><img alt="Video Example" src="http://1.bp.blogspot.com/-1-k1LuBfg2w/VgQ1LPU6nYI/AAAAAAAABOc/pX9UQxcLTdw/s1600-r/v3.png" /></center>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML13' locked='false' title='Subscribe Us' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;!-- Copy &amp; Pasted from YouTube --&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;349&quot; src=&quot;https://www.youtube.com/embed/iZTeSUlkPoM&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.videoWrapper {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+padding-top: 25px;
+height: 0;
+}
+.videoWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+&lt;/style&gt;</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML14' locked='false' title='Subscribe Us' type='HTML' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>&lt;div class=&quot;videoWrapper&quot;&gt;
+&lt;!-- Copy &amp; Pasted from YouTube --&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;349&quot; src=&quot;https://www.youtube.com/embed/H5kHzKfwxKg&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.videoWrapper {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+padding-top: 25px;
+height: 0;
+}
+.videoWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+&lt;/style&gt;</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML15' locked='false' title='Sports' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>3/Sports/small-col-right</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='PageList11' locked='false' title='Menu - Pages' type='PageList' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'http://www.codersgateway.co.in/', 'title': 'Home', 'position': 0}}]]></b:widget-setting>
+          <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+
+<b:if cond='data:title'><!--<h2><data:title/></h2>--></b:if>
+<div>
+<ul class='menus menu-secondary'>
+<b:loop values='data:links' var='link'>
+<b:if cond='data:link.isCurrentPage'>
+<li><a expr:href='data:link.href'><data:link.title/></a></li>
+<b:else/>
+<li><a expr:href='data:link.href'><data:link.title/></a></li>
+</b:if>
+</b:loop>
+</ul>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML16' locked='false' title='Fashion' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>3/Fashion/big-col-right</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML18' locked='false' title='Business' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>3/Business/big-col-left</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML19' locked='false' title='Video Of Day' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<center><img alt="Video Example" src="http://1.bp.blogspot.com/-1-k1LuBfg2w/VgQ1LPU6nYI/AAAAAAAABOc/pX9UQxcLTdw/s1600-r/v3.png" /></center>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'>
+<data:title/>
+</h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList70' locked='false' title='Css Options' type='LinkList' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='text-1'>recentPostsHeadline</b:widget-setting>
+          <b:widget-setting name='link-1'>true</b:widget-setting>
+          <b:widget-setting name='text-0'>fullWidth</b:widget-setting>
+          <b:widget-setting name='link-0'>false</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+        <b:includable id='content'>
+&lt;style type=&#39;text/css&#39;&gt;
+<b:loop values='data:links' var='link'>
+<b:if cond='data:link.name == &quot;fullWidth&quot;'>
+<b:if cond='data:link.target == &quot;true&quot;'>
+#outer-wrapper{max-width:none} 
+</b:if>
+</b:if>
+<b:if cond='data:link.name == &quot;recentPostsHeadline&quot;'>
+<b:if cond='data:link.target == &quot;false&quot;'>
+.home-posts-headline{display:none} 
+</b:if>
+</b:if>
+</b:loop>
+&lt;/style&gt;
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList72' locked='false' title='' type='LinkList' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='text-1'>About</b:widget-setting>
+          <b:widget-setting name='link-1'>https://flatblog-templatesyard.blogspot.com/p/about.html</b:widget-setting>
+          <b:widget-setting name='text-0'>Home</b:widget-setting>
+          <b:widget-setting name='link-2'>https://flatblog-templatesyard.blogspot.com/p/contact-us.html</b:widget-setting>
+          <b:widget-setting name='link-0'>/</b:widget-setting>
+          <b:widget-setting name='text-2'>Contact</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+        <b:includable id='content'>
+<div class='widget-content'>
+<ul>
+<b:loop values='data:links' var='link'>
+<li><a expr:href='data:link.target'><data:link.name/></a></li>
+</b:loop>
+</ul> 
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList71' locked='false' title='Default Variables' type='LinkList' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='link-3'>true</b:widget-setting>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='link-4'>5</b:widget-setting>
+          <b:widget-setting name='text-1'>commentsSystem</b:widget-setting>
+          <b:widget-setting name='link-1'>blogger</b:widget-setting>
+          <b:widget-setting name='text-0'>disqusShortname</b:widget-setting>
+          <b:widget-setting name='link-2'>true</b:widget-setting>
+          <b:widget-setting name='text-3'>fixedMenu</b:widget-setting>
+          <b:widget-setting name='link-0'>templatesyard</b:widget-setting>
+          <b:widget-setting name='text-2'>fixedSidebar</b:widget-setting>
+          <b:widget-setting name='text-4'>postPerPage</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+        <b:includable id='content'>
+&lt;script type=&#39;text/javascript&#39;&gt;
+//&lt;![CDATA[
+<b:loop values='data:links' var='link'>
+<b:if cond='data:link.name == &quot;postPerPage&quot;'>
+var postPerPage = <data:link.target/>;
+</b:if>
+<b:if cond='data:link.name == &quot;fixedSidebar&quot;'>
+var fixedSidebar = <data:link.target/>;
+</b:if>
+<b:if cond='data:link.name == &quot;fixedMenu&quot;'>
+var fixedMenu = <data:link.target/>;
+</b:if>
+<b:if cond='data:link.name == &quot;commentsSystem&quot;'>
+var commentsSystem = &quot;<data:link.target/>&quot;;
+</b:if>
+<b:if cond='data:link.name == &quot;disqusShortname&quot;'>
+var disqusShortname = &quot;<data:link.target/>&quot;;
+</b:if>
+</b:loop>
+//]]&gt;
+&lt;/script&gt;
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList74' locked='false' title='Link List' type='LinkList' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='text-10'>Documentation</b:widget-setting>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='link-1'>#</b:widget-setting>
+          <b:widget-setting name='link-13'>https://www.templatesyard.com/2020/05/flatblog-blogger-template.html</b:widget-setting>
+          <b:widget-setting name='link-2'>#</b:widget-setting>
+          <b:widget-setting name='link-12'>https://youtu.be/e18Q1Tj0bzI</b:widget-setting>
+          <b:widget-setting name='link-0'>/</b:widget-setting>
+          <b:widget-setting name='link-11'>https://www.sorabloggingtips.com/2020/05/how-to-setup-flatblog-blogger-template.html</b:widget-setting>
+          <b:widget-setting name='link-10'>#</b:widget-setting>
+          <b:widget-setting name='text-9'>Mega Menu</b:widget-setting>
+          <b:widget-setting name='link-9'>Business/mega-menu</b:widget-setting>
+          <b:widget-setting name='text-8'>_Error Page</b:widget-setting>
+          <b:widget-setting name='link-7'>https://www.sorabloggingtips.com/2017/01/how-to-add-sitemap-widget-in-blogspot-blogs.html</b:widget-setting>
+          <b:widget-setting name='link-8'>https://flatblog-templatesyard.blogspot.com/templatesyard</b:widget-setting>
+          <b:widget-setting name='link-5'>#</b:widget-setting>
+          <b:widget-setting name='link-6'>https://flatblog-templatesyard.blogspot.com/p/page-markups-and-shortcodes.html</b:widget-setting>
+          <b:widget-setting name='link-3'>#</b:widget-setting>
+          <b:widget-setting name='link-4'>#</b:widget-setting>
+          <b:widget-setting name='text-1'>Features</b:widget-setting>
+          <b:widget-setting name='text-0'>Home</b:widget-setting>
+          <b:widget-setting name='text-3'>__DropDown 1</b:widget-setting>
+          <b:widget-setting name='text-2'>_Multi DropDown</b:widget-setting>
+          <b:widget-setting name='text-5'>__DropDown 3</b:widget-setting>
+          <b:widget-setting name='text-4'>__DropDown 2</b:widget-setting>
+          <b:widget-setting name='text-7'>_SiteMap</b:widget-setting>
+          <b:widget-setting name='text-6'>_ShortCodes</b:widget-setting>
+          <b:widget-setting name='text-11'>_Web Documentation</b:widget-setting>
+          <b:widget-setting name='text-12'>_Video Documentation</b:widget-setting>
+          <b:widget-setting name='text-13'>Download This Template</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+        <b:includable id='content'>
+<ul id='main-menu-nav' role='menubar'>
+<b:loop values='data:links' var='link'>
+<li><a expr:href='data:link.target' role='menuitem'><data:link.name/></a></li>
+</b:loop>
+</ul>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList73' locked='false' title='Header Menu Widget' type='LinkList' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='link-3'>#</b:widget-setting>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='text-1'>twitter</b:widget-setting>
+          <b:widget-setting name='link-1'>#</b:widget-setting>
+          <b:widget-setting name='text-0'>facebook</b:widget-setting>
+          <b:widget-setting name='link-2'>#</b:widget-setting>
+          <b:widget-setting name='text-3'>pinterest</b:widget-setting>
+          <b:widget-setting name='link-0'>https://fb.com/templatesyard</b:widget-setting>
+          <b:widget-setting name='text-2'>instagram</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+        <b:includable id='content'>
+<div class='widget-content'>
+<ul>
+<b:loop values='data:links' var='link'>
+<li expr:class='data:link.name'><a expr:href='data:link.target' expr:title='data:link.name' target='_blank'/></li>
+</b:loop>
+</ul>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList76' locked='false' title='Menu Footer Widget' type='LinkList'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='text-1'>About</b:widget-setting>
+          <b:widget-setting name='link-1'>https://flatblog-templatesyard.blogspot.com/p/about.html</b:widget-setting>
+          <b:widget-setting name='text-0'>Home</b:widget-setting>
+          <b:widget-setting name='link-2'>https://flatblog-templatesyard.blogspot.com/p/contact-us.html</b:widget-setting>
+          <b:widget-setting name='link-0'>/</b:widget-setting>
+          <b:widget-setting name='text-2'>Contact Us</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+
+<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+<div class='widget-content'>
+<ul>
+<b:loop values='data:links' var='link'>
+<li><a expr:href='data:link.target'><data:link.name/></a></li>
+</b:loop>
+</ul>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList75' locked='false' title='Social Plugin' type='LinkList' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='link-7'>#</b:widget-setting>
+          <b:widget-setting name='link-5'>#</b:widget-setting>
+          <b:widget-setting name='link-6'>#</b:widget-setting>
+          <b:widget-setting name='link-3'>#</b:widget-setting>
+          <b:widget-setting name='link-4'>#</b:widget-setting>
+          <b:widget-setting name='text-1'>twitter</b:widget-setting>
+          <b:widget-setting name='text-0'>facebook</b:widget-setting>
+          <b:widget-setting name='text-3'>pinterest</b:widget-setting>
+          <b:widget-setting name='text-2'>rss</b:widget-setting>
+          <b:widget-setting name='text-5'>vk</b:widget-setting>
+          <b:widget-setting name='text-4'>instagram</b:widget-setting>
+          <b:widget-setting name='text-7'>rss</b:widget-setting>
+          <b:widget-setting name='text-6'>youtube</b:widget-setting>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='link-1'>#</b:widget-setting>
+          <b:widget-setting name='link-2'>#</b:widget-setting>
+          <b:widget-setting name='link-0'>http://fb.com/templatesyard</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='widget-title'/>
+<b:include name='content'/>
+</b:includable>
+        <b:includable id='content'>
+<div class='widget-content'>
+<ul class='social-counter social social-color social-text'>
+<b:loop values='data:links' var='link'>
+<li expr:class='data:link.name'><a expr:href='data:link.target' expr:title='data:link.name' target='_blank'/></li>
+</b:loop>
+</ul>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList7' locked='false' title='Edit This Menu' type='LinkList' version='1'>
+        <b:includable id='main'>
+<div class='widget-content'>
+<ul class='menus menu-primary' id='pagelistmenusblogul'>
+<b:loop values='data:links' var='link'>
+<li><a expr:href='data:link.target'><data:link.name/></a></li>
+</b:loop>
+</ul>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML201' locked='false' title='Home - Recent Posts (show/hide)' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>show</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:content == &quot;hide&quot;'>
+<style>.home .posts-title,.home #main{display:none}</style>
+</b:if>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML203' locked='false' title='Home - PageNavi (show/hide)' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>hide</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:content == &quot;show&quot;'>
+<style>.home #blog-pager{display:block}.home div.post-outer:last-child .post{padding-bottom:5px}</style>
+</b:if>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML204' locked='false' title='Internal - PostNavi (show/hide)' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'/>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:content == &quot;hide&quot;'>
+<style>.item ul.post-nav{display:none}</style>
+</b:if>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML205' locked='false' title='Comment System' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>blogger-disqus-facebook</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content' style='display:none'>
+<data:content/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML206' locked='false' title='Disqus Shortname' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>needmag</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content'>
+<script>
+var disqus_shortname = &#39;<data:content/>&#39;;
+</script>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML207' locked='false' title='Fixed Sidebar (true/false)' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>true</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:content == &quot;&quot;'>
+<script type='text/javascript'>
+//<![CDATA[
+$(document).ready(function() {
+if ($(window).width() > 1100) {      
+$("#main-wrapper, #sidebar-wrapper").theiaStickySidebar({
+additionalMarginTop: 25,
+additionalMarginBottom: 25
+});  
+}
+}); 
+//]]>
+</script>
+<b:else/>
+<b:if cond='data:content == &quot;true&quot;'>
+<script type='text/javascript'>
+//<![CDATA[
+$(document).ready(function() {
+if ($(window).width() > 1100) {      
+$("#main-wrapper, #sidebar-wrapper").theiaStickySidebar({
+additionalMarginTop: 25,
+additionalMarginBottom: 25
+});  
+}
+}); 
+//]]>
+</script>
+</b:if>
+</b:if>
+</b:includable>
+      </b:widget>
+      <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
+        <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
+function setAttributeOnload(object, attribute, val) {
+if(window.addEventListener) {
+window.addEventListener(&#39;load&#39;,
+function(){ object[attribute] = val; }, false);
+} else {
+window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
+}
+}
+&lt;/script&gt;
+&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/plusone.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
+if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
+gapi.iframes.getContext().openChild({
+url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d7587233023660433608\x26blogName\x3dCoders+Gateway\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://www.codersgateway.co.in/search\x26blogLocale\x3den_GB\x26v\x3d2\x26homepageUrl\x3dhttp://www.codersgateway.co.in/\x26vt\x3d409017649417491710&#39;,
+where: document.getElementById(&quot;navbar-iframe-container&quot;),
+id: &quot;navbar-iframe&quot;
+});
+}
+});
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+(function() {
+var script = document.createElement(&#39;script&#39;);
+script.type = &#39;text/javascript&#39;;
+script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
+var head = document.getElementsByTagName(&#39;head&#39;)[0];
+if (head) {
+head.appendChild(script);
+}})();
+&lt;/script&gt;
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML200' locked='false' title='Ticker' type='HTML' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>6/recent/ticker-posts</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList210' locked='false' title='Menu' type='LinkList' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='text-1'>About </b:widget-setting>
+          <b:widget-setting name='link-1'>https://needmag-soratemplates.blogspot.com/p/about_28.html</b:widget-setting>
+          <b:widget-setting name='text-0'>Home</b:widget-setting>
+          <b:widget-setting name='link-2'>https://needmag-soratemplates.blogspot.com/p/contact-us_28.html</b:widget-setting>
+          <b:widget-setting name='link-0'>/</b:widget-setting>
+          <b:widget-setting name='text-2'>Contact Us</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content'>
+<ul id='nav1'>
+<b:loop values='data:links' var='link'>
+<li><a expr:href='data:link.target'><data:link.name/></a></li>
+</b:loop>
+</ul> 
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML71' locked='false' title='Slider' type='HTML' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>5/random/slider</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='widget-title'/>
+<div class='widget-content'>
+<data:content/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+        <b:includable id='main'>
+<div class='widget-content'>
+<data:adCode/>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+        <b:includable id='main'>
+<div class='widget-content'>
+<data:adCode/>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='Label3' locked='false' title='Labels' type='Label' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+          <b:widget-setting name='display'>LIST</b:widget-setting>
+          <b:widget-setting name='selectedLabelsList'/>
+          <b:widget-setting name='showType'>ALL</b:widget-setting>
+          <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:title'>
+<h2><data:title/></h2>
+</b:if>
+<div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+<b:if cond='data:display == &quot;list&quot;'>
+<ul>
+<b:loop values='data:labels' var='label'>
+<li>
+<b:if cond='data:blog.url == data:label.url'>
+<span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+<b:else/>
+<a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+</b:if>
+<b:if cond='data:showFreqNumbers'>
+<span dir='ltr'>(<data:label.count/>)</span>
+</b:if>
+</li>
+</b:loop>
+</ul>
+<b:else/>
+<b:loop values='data:labels' var='label'>
+<span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+<b:if cond='data:blog.url == data:label.url'>
+<span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+<b:else/>
+<a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+</b:if>
+<b:if cond='data:showFreqNumbers'>
+<span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+</b:if>
+</span>
+</b:loop>
+</b:if>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML36' locked='false' title='Breaking News' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>Business</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<b:if cond='data:title != &quot;&quot;'>
+<div class='recent-post-title'><h2>
+        <span class='bold-line'>
+       
+          <data:title/></span></h2></div>
+</b:if>
+</b:if>
+<div class='clear'/>
+<div class='widget-content'>
+<div id='previous_button'>
+<i class='fa fa-angle-left'/>
+</div>
+<div id='next_button'>
+<i class='fa fa-angle-right'/>
+</div>
+<div class='content'>
+<ul>
+<script>
+document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=&quot;+numposts5+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=recentarticles1\&quot;&gt;&lt;\/script&gt;&quot;);
+</script>
+</ul>
+<div class='clear'/>
+</div>
+<div class='clear'/>
+</div>
+<script type='text/javascript'>
+(function($) { $(document).ready(function(){
+$(&quot;#carousel .content&quot;).jCarouselLite({
+auto:0,
+scroll: 1,
+speed: 400,	
+visible: 4,
+start: 0,
+circular: true,
+btnPrev: &quot;#previous_button&quot;,
+btnNext: &quot;#next_button&quot;
+});
+})})(jQuery)	
+</script>
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML8' locked='false' title='Sponsor' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<center><img alt="Ads" src="//4.bp.blogspot.com/-h15p0mpYXIo/Vib_tGKHUYI/AAAAAAAABas/WgMNCFh9LWU/s1600-r/ad3.png"/></center>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'>
+<data:title/>
+</h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML7' locked='false' title='BTemplates.com' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<img alt="Ads" src="//3.bp.blogspot.com/-7i-8F7vyLIA/Vib64pMErsI/AAAAAAAABZ8/zcV2v8u-uzk/s1600-r/ad1.png"/>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'>
+<data:title/>
+</h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML39' locked='false' title='Gagdet' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>Business</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<script>  document.write(&#39;&lt;div class=&quot;recent-post-title&quot;&gt;&lt;h2&gt;&lt;a href=&quot;/search/label/<data:content/>?max-results=10&quot;&gt;<data:title/>&lt;/a&gt;&lt;/h2&gt;&lt;/div&gt;&#39;); 
+</script> </b:if>
+<div class='widget-content'>
+<div class='news_pictures1'>
+<ul class='news_pictures_list'>
+<script>
+  document.write(&quot;&lt;script src=\&quot;/feeds/posts/default/-/<data:content/>?max-results=&quot;+numposts8+&quot;&amp;orderby=published&amp;alt=json-in-script&amp;callback=recentarticles7\&quot;&gt;&lt;\/script&gt;&quot;);
+</script>
+
+</ul>
+</div>
+</div>
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
+          <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+          <b:widget-setting name='showSnippets'>false</b:widget-setting>
+          <b:widget-setting name='timeRange'>LAST_WEEK</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content popular-posts'>
+<ul>
+<b:loop values='data:posts' var='post'>
+<li>
+<b:if cond='!data:showThumbnails'>
+<b:if cond='!data:showSnippets'>
+<!-- (1) No snippet/thumbnail -->
+<a expr:href='data:post.href'><data:post.title/></a>
+<b:else/>
+<!-- (2) Show only snippets -->
+<div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+<div class='item-snippet'><data:post.snippet/></div>
+</b:if>
+<b:else/>
+<!-- (3) Show only thumbnails or (4) Snippets and thumbnails. -->
+<div expr:class='data:showSnippets ? &quot;item-content&quot; : &quot;item-thumbnail-only&quot;'>
+<b:if cond='data:post.thumbnail'>
+<div class='item-thumbnail'>
+<a expr:href='data:post.href' target='_blank'>
+<img alt='' border='0' expr:src='resizeImage(data:post.thumbnail, 72, &quot;1:1&quot;)'/>
+</a>
+</div>
+</b:if>
+<div class='item-title'><a expr:href='data:post.href'><data:post.title/></a></div>
+<b:if cond='data:showSnippets'>
+<div class='item-snippet'><data:post.snippet/></div>
+</b:if>
+</div>
+<div style='clear: both;'/>
+</b:if>
+</li>
+</b:loop>
+</ul>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML9' locked='false' title='Flickr Images' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>&lt;div class=&quot;flickr_plugin&quot;&gt;
+&lt;script src=&quot;http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08&quot; type=&quot;text/javascript&quot;&gt;
+&lt;/script&gt;
+&lt;/div&gt;</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='PageList1' locked='false' title='' type='PageList'>
+        <b:widget-settings>
+          <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'http://www.codersgateway.co.in/', 'title': 'Home', 'position': 0}}]]></b:widget-setting>
+          <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+<div class='widget-content'>
+<b:if cond='data:mobile'>
+<select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+<b:loop values='data:links' var='link'>
+<option expr:value='data:link.href'>
+<b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
+<data:link.title/>
+</option>
+</b:loop>
+</select>
+<span class='pagelist-arrow'>&amp;#9660;</span>
+<b:else/>
+<ul>
+<b:loop values='data:links' var='link'>
+<li>
+<b:class cond='data:link.isCurrentPage' name='selected'/>
+<a expr:href='data:link.href'><data:link.title/></a>
+</li>
+</b:loop>
+</ul>
+</b:if>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML4' locked='false' title='Blogroll' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>Technology</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML3' locked='false' title='About' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>Slider</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML6' locked='false' title='Gallery' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>Gallery</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='PageList3' locked='false' title='Pages' type='PageList'>
+        <b:widget-settings>
+          <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'http://www.codersgateway.co.in/', 'title': 'Home', 'position': 0}}]]></b:widget-setting>
+          <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+<div class='widget-content'>
+<b:if cond='data:mobile'>
+<select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+<b:loop values='data:links' var='link'>
+<option expr:value='data:link.href'>
+<b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
+<data:link.title/>
+</option>
+</b:loop>
+</select>
+<span class='pagelist-arrow'>&amp;#9660;</span>
+<b:else/>
+<ul>
+<b:loop values='data:links' var='link'>
+<li>
+<b:class cond='data:link.isCurrentPage' name='selected'/>
+<a expr:href='data:link.href'><data:link.title/></a>
+</li>
+</b:loop>
+</ul>
+</b:if>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML5' locked='false' title='BTemplates.com' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>Sports</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML2' locked='false' title='Games' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>Games</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<!-- only display title if it's non-empty -->
+<b:if cond='data:title != &quot;&quot;'>
+<h2 class='title'><data:title/></h2>
+</b:if>
+<div class='widget-content'>
+<data:content/>
+</div>
+
+<b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='Image70' locked='false' title='Mobile Logo Settings' type='Image' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='displayUrl'>http://2.bp.blogspot.com/-mzyIabzGDp8/Xrv9YSSzpPI/AAAAAAAAIVY/73bIn7rRdeUIdrvinVbWzS8hEyY0NNh4QCK4BGAYYCw/s1600/FlatBlog%2BMobile.png</b:widget-setting>
+          <b:widget-setting name='displayHeight'>60</b:widget-setting>
+          <b:widget-setting name='sectionWidth'>257</b:widget-setting>
+          <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+          <b:widget-setting name='displayWidth'>269</b:widget-setting>
+          <b:widget-setting name='link'>My Title</b:widget-setting>
+          <b:widget-setting name='caption'>image</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:include name='content'/>
+</b:includable>
+        <b:includable id='content'>
+<div class='logo-content'>
+<b:if cond='data:caption == &quot;image&quot;'>
+<a expr:href='data:blog.homepageUrl'><img expr:alt='data:blog.title' expr:src='data:sourceUrl'/></a>
+<b:elseif cond='data:caption == &quot;custom&quot;'/>
+<b:if cond='data:link'>
+<h3><a expr:href='data:blog.homepageUrl'><data:link/></a></h3>
+</b:if>
+<b:else/>   
+<h3><a expr:href='data:blog.homepageUrl'><data:blog.title/></a></h3>       
+</b:if> 
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList50' locked='false' title='Social Media Icons' type='LinkList' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='link-3'>#</b:widget-setting>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='link-4'>#</b:widget-setting>
+          <b:widget-setting name='text-1'>twitter</b:widget-setting>
+          <b:widget-setting name='link-1'>#</b:widget-setting>
+          <b:widget-setting name='text-0'>facebook</b:widget-setting>
+          <b:widget-setting name='link-2'>#</b:widget-setting>
+          <b:widget-setting name='text-3'>pinterest</b:widget-setting>
+          <b:widget-setting name='link-0'>#</b:widget-setting>
+          <b:widget-setting name='text-2'>youtube</b:widget-setting>
+          <b:widget-setting name='text-4'>instagram</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content'>
+<ul>
+<b:loop values='data:links' var='link'>
+<li><a expr:class='data:link.name' expr:href='data:link.target' expr:title='data:link.name' target='_blank'/></li>
+</b:loop>
+</ul>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='PageList8' locked='false' title='Pages - Menu' type='PageList' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'http://www.codersgateway.co.in/', 'title': 'Home', 'position': 0}}]]></b:widget-setting>
+          <b:widget-setting name='homeTitle'>Home</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<b:if cond='data:title'><!--<h2><data:title/></h2>--></b:if>
+<div class='widget-content'>
+<ul class='menus menu-primary' id='pagelistmenusblogul'>
+<b:loop values='data:links' var='link'>
+<b:if cond='data:link.isCurrentPage'>
+<li id='currentpage'><a expr:href='data:link.href'><data:link.title/></a></li>
+<b:else/>
+<li><a expr:href='data:link.href'><data:link.title/></a></li>
+</b:if>
+</b:loop>
+</ul>
+<b:include name='quickedit'/>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList51' locked='false' title='Social Media Icons' type='LinkList' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='link-3'>#</b:widget-setting>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='link-4'>#</b:widget-setting>
+          <b:widget-setting name='text-1'>twitter</b:widget-setting>
+          <b:widget-setting name='link-1'>#</b:widget-setting>
+          <b:widget-setting name='text-0'>facebook</b:widget-setting>
+          <b:widget-setting name='link-2'>#</b:widget-setting>
+          <b:widget-setting name='text-3'>pinterest</b:widget-setting>
+          <b:widget-setting name='link-0'>#</b:widget-setting>
+          <b:widget-setting name='text-2'>youtube</b:widget-setting>
+          <b:widget-setting name='text-4'>instagram</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content'>
+<ul>
+<b:loop values='data:links' var='link'>
+<li><a expr:class='data:link.name' expr:href='data:link.target' expr:title='data:link.name' target='_blank'/></li>
+</b:loop>
+</ul>
+</div>
+</b:includable>
+      </b:widget>
+      <b:widget id='LinkList98' locked='false' title='Main Menu' type='LinkList' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='text-10'>_Web</b:widget-setting>
+          <b:widget-setting name='sorting'>NONE</b:widget-setting>
+          <b:widget-setting name='link-1'>#</b:widget-setting>
+          <b:widget-setting name='link-2'>#</b:widget-setting>
+          <b:widget-setting name='link-12'>http://www.soratemplates.com/2016/08/needmag-blogger-templates.html</b:widget-setting>
+          <b:widget-setting name='link-0'>#</b:widget-setting>
+          <b:widget-setting name='link-11'>https://youtu.be/uAQsfc47xx0</b:widget-setting>
+          <b:widget-setting name='link-10'>http://www.sorabloggingtips.com/2016/10/how-to-setup-need-mag-blogger-template.html</b:widget-setting>
+          <b:widget-setting name='text-9'>Documentation</b:widget-setting>
+          <b:widget-setting name='link-9'>#</b:widget-setting>
+          <b:widget-setting name='text-8'>Mega Menu</b:widget-setting>
+          <b:widget-setting name='link-7'>http://needmag-soratemplates.blogspot.in/soratemplates</b:widget-setting>
+          <b:widget-setting name='link-8'>mega/Sports</b:widget-setting>
+          <b:widget-setting name='link-5'>https://needmag-soratemplates.blogspot.com/p/post-format-and-page-markup_28.html</b:widget-setting>
+          <b:widget-setting name='link-6'>http://www.sorabloggingtips.com/2017/01/how-to-add-sitemap-widget-in-blogspot-blogs.html</b:widget-setting>
+          <b:widget-setting name='link-3'>#</b:widget-setting>
+          <b:widget-setting name='link-4'>#</b:widget-setting>
+          <b:widget-setting name='text-1'>_Multi DropDown</b:widget-setting>
+          <b:widget-setting name='text-0'>Features</b:widget-setting>
+          <b:widget-setting name='text-3'>__DropDown 2</b:widget-setting>
+          <b:widget-setting name='text-2'>__DropDown 1</b:widget-setting>
+          <b:widget-setting name='text-5'>_ShortCodes</b:widget-setting>
+          <b:widget-setting name='text-4'>__DropDown 3</b:widget-setting>
+          <b:widget-setting name='text-7'>_Error page</b:widget-setting>
+          <b:widget-setting name='text-6'>_SiteMap</b:widget-setting>
+          <b:widget-setting name='text-11'>_Video</b:widget-setting>
+          <b:widget-setting name='text-12'>Download This Template</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+<div class='widget-content'>
+<ul id='nav2' itemscope='' itemtype='http://schema.org/SiteNavigationElement'> 
+<b:loop values='data:links' var='link'>
+<li itemprop='name'><a expr:href='data:link.target' itemprop='url'><data:link.name/></a></li>
+</b:loop>
+</ul>
+</div>
+</b:includable>
+      </b:widget>
+    </b:section>
+</div>
