@@ -1,0 +1,217 @@
+.property-details-list {
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-bottom: 30px;
+}
+.table-text-area {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 12px;
+}
+.heading-table-name h5 {
+font-size: 14px;
+} 
+.table-padding table tbody tr td {
+    padding: 8px 14px!important;
+    font-size: 12px;
+}
+.property-details-list .img-icon-buy {
+    padding-top: 0px;
+    padding-bottom: 3px;
+}
+.img-size-propertydetails {
+    width: 100%;
+    height: 130px;
+    padding: 2px;
+}
+/*.img-border-property {
+      border: 1px solid #e4e4e4;
+      box-shadow: 0px 0px 2px;
+      margin: 10px 0;
+}*/
+.property-details-admin .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.5%;
+    width: 71px;
+    position: absolute;
+ }
+.property-details-admin .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.property-details-admin .heading h5 span {
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: 10px;
+}
+.property-details-field {
+      margin-top: 20px;
+}
+.property-details-field .property-detail-address span {
+    font-weight: 700;
+}
+.button-property-image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button-property-image h5 {
+    font-size: 14px;
+}
+.button-property-image button {
+    border: 1px solid #4c4c4c52;
+    padding: 2px 8px;
+    color: #4c4c4c;
+    border-radius: 4px;
+    background-color: #ececec;
+    font-weight: 400;
+    font-size: 12px;
+}
+.button-property-image button:hover {
+    color: #fff;
+    background-color: #4c4c4c;
+    box-shadow: 0px 0px 3px #bbbbbb94;
+}
+.property-details-description {
+    margin-top: 15px;
+}
+.property-details-description h5 {
+    font-size: 14px;
+}
+.property-details-description pre {
+    height: auto;
+    border: 1px solid #d4d3d3;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #cccacaa6;
+    font-family: 'Roboto';
+    font-size: 12px;
+    white-space: pre-wrap;
+}
+.box-shadow-border {
+    border: 1px solid #d4d3d3;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #cccacaa6;
+    margin-left: 15px!important;
+    margin-right: 15px!important;
+}
+.property-details-description h5 span {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+td.button-upload div button{
+    background-color: #3a3a3c!important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.property-detail-user {
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    background-color: #f9f9fa;
+    box-shadow: 0px 0px 3px;
+}
+.details-heading {
+    font-size: 14px;
+    font-weight: 700;
+}
+/* p.details-heading:after {
+    content: '';
+    background: #3797dd;
+    height: 18px;
+    width: 0.8%;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+} */
+.img-bottom {
+    margin-bottom: 5px;
+    width: 10px;
+}
+.error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+a:hover {
+    text-decoration: none!important;
+}
+.table-width-col {
+    width: 78px;
+}
+.container-padding-remove {
+    padding: 0px!important;
+    margin-top: 10px;
+}
+.container-padding-remove .col-md-8 {
+    padding-left:0px; 
+    margin: 10px 0; 
+}
+.container-padding-remove .col-md-4 {
+    margin: 10px 0; 
+}
+.height-increase {
+    height: 260px;
+}
+.button-property-image .showUpload {
+    float: right;
+}
+.assign-seller-button {
+    float: right;
+    border: 1px solid #d7d7d8;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    background: #4c4c4c;
+}
+.assign-seller-button:hover {
+    background-color: #3797dd;
+    color: #fff;
+}
+.img-center-property {
+    text-align: center;
+}
+.img-center-property img {
+    width: 150px;
+}
+.property-details-admin h6 {
+    padding-top: 20px;
+}
+.property-details-admin h6 a {
+    color:#4c4c4c;
+    font-size: 14px;
+}
+.property-details-admin h6 a:hover {
+    color:#3797dd;
+    text-decoration: none;
+}
+.property-details-admin .heading-right-buyer {
+    text-align: right;
+}
+.radio-mui-group .MuiRadio-colorSecondary.Mui-checked {
+    color: #3797dd!important;
+}
+.radio-mui-group .MuiSvgIcon-root {
+    width: 18px!important;
+    height: 18px!important;
+}
+.select-deal .MuiInputBase-input{
+    font-size: 12px!important;
+    padding: 0px 24px 0px 0!important;
+}
+button.update-button-descripe, button.update-button-descripe:hover, button.update-button-descripe:focus, button.update-button-descripe:active {
+    background: #4c4c4c!important;
+    border: none!important;
+}

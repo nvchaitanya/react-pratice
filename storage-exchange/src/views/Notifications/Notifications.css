@@ -1,0 +1,120 @@
+.notification-dash {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 30px;
+}
+.notofication-dash-head .heading .heading-broder {
+  content: '';
+  background: #3a3a3c;
+  height: 6%;
+  width:80px;
+  position: absolute;
+}
+.notofication-dash-head .heading h5 span{
+    color:#3797dd;
+}
+.notofication-dash-head .heading h5 {
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-bottom: 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.notification-popup h5 {
+  font-size: 16px;
+}
+.notification-popup h5 img {
+  margin-bottom: 5px;
+}
+.notification-body .row .col-sm-8 {
+  font-size: 14px;
+}
+.notification-body .row .col-sm-4 {
+  text-align: right;
+  font-size: 14px;
+}
+.notification-body .row .col-sm-4 a {
+  border: 1px solid #b9b7b7;
+    border-radius: 5px;
+    color: #000;
+    padding: 5px;
+    background-color: #f9f9f9;
+    font-size: 12px;
+}
+.notification-content {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.notification-top {
+  margin-top: 20px;
+}
+.notification-no-found {
+  text-align: center;
+}
+.read-notification-box span.color-span {
+  color: #3797dd;
+  padding-right: 20px;
+}
+.read-notification-box .readmore-right {
+  float: right;
+  color: #55babe;
+}
+.unread-notification-box span.color-span {
+  color: #3797dd;
+  padding-right: 20px;
+}
+.unread-notification-box .readmore-right {
+  float: right;
+  color: #55babe;
+  font-weight: 600;
+}
+.table-bordered tfoot tr td {
+  border: #fff0;
+}
+.paddingremove-colm {
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+}
+.table-seller-property tbody.read-notification-box tr td {
+  background-color: #ececec59;
+}
+.error{
+  color: #dc3545;
+}
+.compose-message-link a {
+  margin: 15px 0px;
+  padding: 5px 6px;
+  display: block;
+  text-align: center;
+  background: #4c4c4c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.compose-message-link a:hover {
+  color:#3797dd;
+  cursor: pointer!important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .notofication-dash-head .col-md-10 {
+    max-width: 65%;
+  }
+  .notofication-dash-head .col-md-2 {
+    min-width: 35%;
+  }
+  .compose-message-link a {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 992px)  and (max-width: 1199px){
+  .notofication-dash-head .col-md-10 {
+    max-width: 75%;
+  }
+  .notofication-dash-head .col-md-2 {
+    min-width: 25%;
+  }
+  .compose-message-link a {
+    font-size: 12px;
+  }
+}

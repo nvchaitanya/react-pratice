@@ -1,0 +1,10 @@
+.dialog-box-image-upload {
+    width: 400px;
+}.dialog-box-image-upload button {
+    float: right;
+    font-size: 14px;
+    border: 1px solid #fff0;
+    border-radius: 3px;
+    padding: 0px 6px;
+    background-color: #fff0;
+}

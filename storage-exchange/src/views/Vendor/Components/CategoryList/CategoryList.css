@@ -1,0 +1,128 @@
+.vendor-category {
+    background: linear-gradient( to right, rgba(52, 58, 64, 0.62), rgba(52, 58, 64, 0.62)), url("../../../../Assets/Img/property-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+.pass-signin {
+    text-transform: capitalize;
+}
+.vendor-category .banner-heading h2 {
+    color:#fff;
+    font-size: 42px;
+    font-weight: 600;
+    }
+    .vendor-category .item img{
+        margin: 4px 15px 0 0 ;
+        padding-top: 0;
+        width: 70px;
+        padding-right: .28571429em;
+        vertical-align: top;
+        transition: color .1s ease;
+    }
+    .vendor-category .item{
+        display:-webkit-inline-box;
+        padding-left: 50px;
+    }
+    .vendor-category .item .content{
+        padding: 0 0 0 15px;
+        vertical-align: top;
+        border-left: 5px solid #3797dd;
+    }
+    .vendor-category .item .content h2 {
+        margin: 0;
+    }
+    .vendor-category .item .content span{
+       font-size: 14px;
+    }
+    .vendor-category .item .content span a{
+        color: #fff;
+     }
+     .vendor-category .item .content span a:hover {
+        color: #3797dd;
+     }
+    .vendor-category .listitem{
+        list-style: none;
+        padding:0;
+    }
+    @media only screen and (min-width: 360px) and (max-width: 425px) {
+        .vendor-category .item{
+            display:-webkit-inline-box;
+            padding-left: 10px;
+        }
+    }
+    @media only screen and (max-width: 320px) {
+        .vendor-category .item{
+            display:-webkit-inline-box;
+            padding-left: 0px;
+        }
+        .vendor-category .item img {
+           display:none;
+        }
+    }
+/**banner end**/
+.category-vendor {
+    padding:30px 45px;
+}
+.category-vendor .heading h3 {
+    text-transform: uppercase;
+}
+.category-vendor .heading h3 span {
+    color:#3797dd;
+}
+.category-vendor .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.50%;
+    width:263px;
+    position: absolute;
+  }
+  .category-vendor .category-list {
+      margin: 40px 0;
+  }
+  .category-vendor .col-md-4 {
+      padding: 0 55px 0 0 ;
+      margin-bottom: 30px;
+  }
+  .category-vendor table tr {
+    border: none;
+  }
+  .category-vendor table td {
+    border: none;
+  }
+  .category-list .cate-head {
+    background: linear-gradient(to right, #5ac0bc38 0%, #5b83c35c 100%);
+    color:#000;
+    font-weight: 600;
+  }
+  .category-list .MuiExpansionPanelDetails-root {
+    display: flex;
+    background-color: #ebf7f7;
+    padding: 0px 19px 0px;
+}
+.category-list .MuiTableCell-root {
+     padding: 10px;
+     font-size: 16px;
+}
+.category-list a {
+    color:#000;
+}
+.category-list a:hover {
+    text-decoration: none;
+    color:#3797dd;
+}
+.category-list img {
+    padding-bottom: 4px;
+}
+.category-list .cate-head.Mui-expanded {
+    min-height: 24px!important;
+    /* background-color: #ebf7f7; */
+    background: linear-gradient(to right, #ebf7f7 0%, #ebf7f7 100%);
+}
+.category-list .MuiExpansionPanelSummary-content.Mui-expanded {
+    margin: 0px 0;
+}

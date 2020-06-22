@@ -1,0 +1,29 @@
+.dashboard-admin .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.5%;
+    width:60px;
+    position: absolute;
+  }
+.dashboard-admin  .heading h5 span{
+      color:#3797dd;
+  }
+.dashboard-admin .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+.background-clr-admin {
+    background-color: #f9f9fa;
+}
+.back-shadow-box {
+    border: 1px solid #fff0;
+    margin: 16px 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}

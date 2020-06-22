@@ -1,0 +1,92 @@
+  .notofication-dash-head .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 6%;
+    width:80px;
+    position: absolute;
+  }
+  .notofication-dash-head .heading h5 span{
+      color:#3797dd;
+  }
+  .notofication-dash-head .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .notification-popup h5 {
+    font-size: 16px;
+  }
+  .notification-popup h5 img {
+    margin-bottom: 5px;
+  }
+  .notification-body .row .col-sm-8 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .notification-body .name-user-msg {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .notification-body .row .col-sm-4 {
+    text-align: right;
+    font-size: 14px;
+  }
+  .notification-body .row .col-sm-4 a {
+    border: 1px solid #b9b7b7;
+      border-radius: 5px;
+      color: #000;
+      padding: 5px;
+      background-color: #f9f9f9;
+      font-size: 12px;
+  }
+  .img-arrow-width {
+    width: 10px;
+    margin: 0px 2px;
+  }
+  .notification-content {
+    margin-bottom: 35px;
+    font-size: 14px;
+    height: 150px;
+  }
+  .notification-top {
+    margin-top: 20px;
+  }
+  .submit-msg-btn {
+    background-color: #0087ff!important;
+    color: #fff!important;
+    padding: 5px 14px !important;
+    margin: 0px 14px!important;
+    font-size: 12px!important;
+  }
+  .submit-msg-btn:hover {
+    background-color: #3a3a3c!important;
+    color: #fff!important;
+  }
+  button.cancle-btn-msg {
+    background: #bfbfbf00!important;
+    color: #262626!important;
+    vertical-align: bottom!important;
+    border: none!important;
+    font-size: 12px!important;
+    padding: 9px 14px 0 0px!important;
+  }
+  button.cancle-btn-msg:hover {
+    background: #bfbfbf00!important;
+  }
+  .msg-head {
+    margin-bottom: 7px;
+    font-weight: 600;
+  }
+  .date-formate {
+    font-size: 12px;
+    color: #4c4c4c;
+  }
+  .padding-remove-left table tr td:first-child {
+    padding-left: 0px!important;
+  }
+  
+  .error{
+    color: #dc3545;
+  }

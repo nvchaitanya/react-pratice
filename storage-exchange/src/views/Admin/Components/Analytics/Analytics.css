@@ -1,0 +1,81 @@
+.dashboard-analytics .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.5%;
+    width:60px;
+    position: absolute;
+  }
+.dashboard-analytics  .heading h5 span{
+      color:#3797dd;
+  }
+.dashboard-analytics .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+.dashboard-analytics .dashboard-tabs .nav-link {
+    width: 103px;
+    font-weight: 500;
+    color: #989898;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 0 5px 0; 
+    margin-right: 15px; 
+    /* font-size: 14px; */
+   /* display: block;
+    padding: 0.5rem 1rem;
+    width: 336px;
+    color: #fff!important;
+    background-color: #3797dd;
+    text-align: center;*/
+}
+.dashboard-analytics ul.dashboard-tabs li a.nav-link:second-child {
+    width: 83px;
+}
+.dashboard-analytics .dashboard-tabs .nav-link.active {
+    background-color: #fff;
+    border-left-color: #fff;
+    border-bottom: 2px solid #080808;
+    border-right-color: #fff;
+    border-top-color: #fff;
+    color: #080808!important;
+    /*background-color: #3797dda8;*/
+}
+.dashboard-analytics .dashboard-tabs .nav-link a:not([href]):not([tabindex]) {
+    color: #737b7b;
+    text-decoration: none;
+}
+.dashboard-analytics .dashboard-tabs .active.nav-link {
+    border: none;
+    color: #000;
+    border-bottom: 2px solid #000!important;
+}
+.dashboard-analytics .dashboard-tabs .nav-link:hover {
+    border-color: transparent;
+    /*background-color: #3797dda8;*/
+}
+.dash-board-back .col-md-12 {
+    background-color: #fff;
+}
+.dashboard-layout-height{
+    min-height: calc(100vh - 81px);
+}
+.dashboard-tabs a:not([href]):hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.background-clr-admin {
+    background-color: #f9f9fa;
+}
+.back-shadow-box {
+    border: 1px solid #fff0;
+    margin: 16px 0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}

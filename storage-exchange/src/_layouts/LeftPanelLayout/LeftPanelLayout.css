@@ -1,0 +1,207 @@
+.header-admin {
+    border-bottom: 1px solid #3a3a3c;
+}
+.header-admin .admin-left {
+    float: left;
+    text-align: left;
+}
+.header-admin .admin-right ul {
+    display: inline-flex;
+    list-style: none;
+    float: right;
+    text-align: right;
+    margin: 0px;
+}
+.header-admin .admin-right ul li {
+    padding-right: 6px;
+}
+.header-admin .admin-right ul li .img-dashboard {
+    width: 16px;
+}
+.header-admin .admin-right ul li h6 {
+    margin:4px 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.header-admin .admin-left h6 {
+    margin: 10px 5px;
+    font-size: 13px;
+}
+.header-admin .admin-right ul li h6 img {
+    padding-right: 3px;
+    padding-bottom: 1px;
+}
+.header-admin ul li {
+    margin: 5px 5px;
+}
+.header-admin h6 {
+    margin: 10px 5px;
+    font-size: 17px;
+}
+.header-admin h6 a {
+    color:#000;
+}
+.header-admin h6 a:hover {
+    color:#3797dd;
+    text-decoration: none;
+}
+.count-symbol {
+    top: 6px;
+   /* right: 5px;*/
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+}
+
+/*footer*/
+.footer-admin {
+    /* background: #fff;*/
+     color: #1f2024;
+     background-color: #fff;
+     font-size: 15px;
+     padding: 0px 15px 10px 15px;
+     border-top: 1px solid #3a3a3c85;
+ }
+ .footer-admin .row {
+     margin-left: 0!important;
+     margin-right:0!important;
+ }
+ .footer-admin a {
+     color:#000;
+     font-size: 12px;
+ }
+ .footer-admin a:hover {
+    color:#3797dd;
+    text-decoration: none;
+}
+ .footer-admin .footer_right {
+     text-align: right;
+ }
+ .footer-admin .footer-bottom p {
+     margin: 0px;
+     font-size: 12px;
+ }
+ .footer-admin .footer-bottom {
+     padding: 10px 0 0 0;
+ }
+ /*left-menu*/
+ .admin-logo .logo {
+    width: 70px;
+    max-width: 100%
+}
+.admin-logo {
+    text-align: center;
+    padding: 10px 0 10px 0; 
+}
+.MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    background-color: #4c4c4c!important;
+    z-index: 1201;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+}
+.left-sidebar {
+    background-color: #4c4c4c;
+    color: #fff;
+    font-weight: 500;
+}
+.left-sidebar .svg-inline--fa.fa-w-14 {
+    width: 0.5em;
+}
+.left-sidebar a {
+    color:#fff;
+}
+.left-sidebar a span {
+    font-size: 14px;
+    font-weight: 400;
+}
+.left-sidebar a:hover {
+    color:#3797dd;
+    text-decoration: none;
+}
+.left-sidebar .menu-padd {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.left-sidebar .MuiListItemText-inset {
+    padding-left: 0px;
+}
+.img-icon {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 50px!important;
+}
+.img-icon img {
+    width: 15px;
+}
+.user-manage-icon .logo {
+    padding-left: 50px;
+    width: 94%;
+    padding-right: 8px;
+}
+.left-sub-menu div ul a {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    /*word-break: break-all;*/
+}
+.left-sub-menu div ul li.first-property {
+    font-size: 12px;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 10px 4px 10px 20px;
+    text-indent: -1em;
+}
+.left-sidebar hr {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+.left-icon-buyer {
+  /* list-style-image: url('./../../Assets/Img/deals.png');*/
+  list-style: none;
+}
+.icon-buyers li {
+     list-style-image: url('./../../Assets/Img/arrow-right-small.png');
+  }
+.buy-icon {
+    padding-left: 13px;
+    padding-right: 2px;
+    width: 24px;
+}
+ul.icon-buyers li {
+    cursor: pointer;
+}
+ul.icon-buyers li:hover {
+    cursor: pointer;
+    color: #3797dd;
+}
+ul.remove-padding {
+    padding: 3px 0;
+}
+.top-welcome {
+    padding-left: 17px;
+    padding-right: 73px;
+}
+.left-icon-buyer ul li {
+    font-size: 13px;
+}
+/*Condition*/
+/* .color-circle {
+  
+} */
+.color-circle-condition {
+    background-color: green;
+}
+.panel-active {
+    color: #3797dd!important;
+}
+.panel-inactive {
+    color: #fff;
+}

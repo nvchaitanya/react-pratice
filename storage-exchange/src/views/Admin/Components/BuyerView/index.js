@@ -1,0 +1,1 @@
+export { default as BuyerView } from './BuyerView';

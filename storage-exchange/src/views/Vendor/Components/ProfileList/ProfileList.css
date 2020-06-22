@@ -1,0 +1,146 @@
+.vendor-profilelist {
+    background: linear-gradient( to right, rgba(52, 58, 64, 0.62), rgba(52, 58, 64, 0.62)), url("../../../../Assets/Img/property-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom:50px;
+}
+.vendor-profilelist .banner-heading h2 {
+    color:#fff;
+    font-size: 42px;
+    font-weight: 600;
+    }
+    .vendor-profilelist .item img{
+        margin: 4px 15px 0 0 ;
+        padding-top: 0;
+        width: 70px;
+        padding-right: .28571429em;
+        vertical-align: top;
+        transition: color .1s ease;
+    }
+    .vendor-profilelist .item{
+        display:-webkit-inline-box;
+        padding-left: 50px;
+    }
+    .vendor-profilelist .item .content{
+        padding: 0 0 0 15px;
+        vertical-align: top;
+        border-left: 5px solid #3797dd;
+    }
+    .vendor-profilelist .item .content h2 {
+        margin: 0;
+    }
+    .vendor-profilelist .item .content span{
+       font-size: 14px;
+    }
+    .vendor-profilelist .item .content span a {
+        color: #fff;
+     } 
+     .vendor-profilelist .item .content span a:hover {
+        color: #3797dd;
+     }
+    .vendor-profilelist .listitem{
+        list-style: none;
+        padding:0;
+    }
+    @media only screen and (min-width: 360px) and (max-width: 425px) {
+        .vendor-profilelist .item{
+            display:-webkit-inline-box;
+            padding-left: 10px;
+        }
+    }
+    @media only screen and (max-width: 320px) {
+        .vendor-profilelist .item{
+            display:-webkit-inline-box;
+            padding-left: 0px;
+        }
+        .vendor-profilelist .item img {
+           display:none;
+        }
+    }
+/**banner end**/
+.profile-listing {
+    padding:30px 45px;
+}
+.profile-listing .heading h3 {
+    text-transform: uppercase;
+}
+.profile-listing .heading h3 span {
+    color:#3797dd;
+}
+.profile-listing .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.50%;
+    width:80px;
+    position: absolute;
+  }
+  .profile-listing table .property-list-img {
+      width: 27%;
+      border-left: 5px solid #3797dd;
+      padding:0px;
+      text-align: center;
+  }
+  .property-list-img img {
+    /*width: 250px;*/
+    max-width: 100%;
+    padding: 10px 0;
+    height: 155px;
+  }
+  .profile-listing table {
+      margin-top:20px;
+  }
+  .profile-listing .para-break {
+    height: 77px;
+    margin: 10px 0;
+    padding-right: 15px;
+  }
+  .profile-listing .tbl-tr {
+   margin-bottom: 20px;
+ }
+ .heading-profilelist h5 {
+     color: #7c9bcf;
+     text-transform: uppercase;
+     margin-bottom: 0px;
+ }
+ .heading-profilelist tbody tr {
+    margin-bottom: 28px!important;
+    display: table;
+    box-shadow: 0px 0px 4px #dcdada;
+ }
+ .heading-profilelist tbody tr:hover {
+    box-shadow: 0px 0px 8px #b9b9b9;
+    cursor: pointer;
+ }
+ .heading-profilelist tfoot tr {
+    border: #fff0!important;
+ }
+ .heading-profilelist tfoot tr td {
+    border: #fff0!important;
+ }
+ .right-read-more {
+     float: right;
+ }
+ .right-read-more a {
+    background-color: #3797dd;
+    padding: 3px 5px;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+ }
+ .right-read-more a:hover {
+     background-color: #3a3a3c;
+     text-decoration: none;
+     color: #fff;
+ }
+ .total-vendorlist-home {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    font-weight: 500;
+    color:#3a3a3c ;
+    
+ }

@@ -1,0 +1,126 @@
+.sign-in .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 5px;
+    margin: 35px 0 25px 0;
+  }
+  .sign-in {
+    padding:35px ;
+  }
+  .sign-in .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.80%;
+    width:168px;
+    position: absolute;
+  }
+  .sign-in .heading h3 span{
+      color:#3797dd;
+  }
+  .sign-in .user-signin {
+      background-image: url('./../../Assets/Img/user-2.png');
+      background-repeat: no-repeat;
+      background-position: left;
+      padding-left: 35px;
+      background-size: 35px;
+  }
+  .sign-in .pass-signin {
+    background-image: url('./../../Assets/Img/pass.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 35px;
+    background-size: 35px;
+}
+  .sign-in .wrapper .wrapper-content{
+    border-radius: 5px;
+    background: #fff;
+    width: 100%;
+    height: 349px;
+    max-width: 450px;
+    position: relative;
+    padding: 15px 15px 1px 15px;
+    border:1px solid #000;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  .sign-in .wrapper .wrapper-content .forgot-right{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sign-in .wrapper .wrapper-content .left-border {
+    content: '';
+    background: #3797dd;
+    height: 23px;
+    width: 0.8%;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+  }
+  .sign-in .wrapper-content h4 {  
+    text-align: left;
+    /* margin-left: 13px;   */
+    margin-bottom: 14px;  
+  }
+  .sign-in .wrapper .sign-btn {
+    width: 100%;
+    background-color: #3797dd;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .sign-in .wrapper .sign-btn:hover {
+    background-color: #4c4c4c;
+  }
+  .sign-in .sign-option {
+      float: left;
+  }
+  .sign-option label {
+    font-size: 16px;
+  }
+  .sign-option .form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none;
+  }
+  .sign-in .sign-option div:first-child {
+    height: fit-content;
+  }
+  .sign-in .wrapper-content form .form-group .invalid-feedback {
+    width: 100%;
+    margin-top: 0px;
+    /* margin-bottom: 0px; */
+    /* padding-bottom: 10px; */
+    font-size: 70%;
+    color: #dc3545;
+    position: absolute;
+    left: 21px;
+    text-align: left;
+  }
+  .sign-in .wrapper-content form .form-group  {
+    margin-bottom: 20px;
+  }
+ .sign-option .invalid-feedback {
+    top: 184px!important;
+    left: 158px!important;
+  }
+ /* input.user-signin .invalid-feedback {
+    position: absolute;
+    top: 191px;
+    left: 0px;
+    width: 139px;
+  }*/
+  .sign-in .crt-sign {
+      margin: 0 -15px -15px -15px;
+  }
+  .sign-in .sign-create {
+    width: 100%;
+    background-color: #3797dd;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px; 
+  }
+  .sign-create:hover {
+    background-color: #5b86c4!important;
+  } 

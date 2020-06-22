@@ -1,0 +1,109 @@
+.success{
+    color:green;
+}
+.user-myaccount .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 5px;
+    margin: 35px 0 25px 0;
+  }
+  .user-myaccount {
+    padding:25px 35px ;
+  }
+  .user-myaccount .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.60%;
+    width:70px;
+    position: absolute;
+  }
+  .user-myaccount .heading h3 span{
+      color:#3797dd;
+  }
+  .user-myaccount .heading p {
+      margin-top: 20px;
+  }
+  .user-myaccount .wrapper .wrapper-content{
+    border-radius: 5px;
+    background: #fff;
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    padding: 15px;
+   /* border-top:7px solid #3797dd;
+    border-bottom: 7px solid #3797dd;
+    border-left: 2px solid #1f2024;
+    border-right: 2px solid #1f2024;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.3);*/
+    text-align: center;
+  }
+  .user-myaccount .wrapper .wrapper-content h3 {
+      font-size: 16px;
+  }
+  .user-myaccount .wrapper-content .btn-primary {
+    color: #fff;
+    background-color: #4d90cc;
+    border-color: #4d90cc;
+    width: 100%;
+    font-size: 14px;
+  }
+  .user-myaccount .txt-area {
+    height:120px;
+  }
+  .user-myaccount .wrapper-content .btn-primary:hover {
+      background-color: #000;
+  }
+  a.change-password-account {
+    padding: 10px 0px 0;
+    display: block;
+    color: #4c4c4c;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .margin-form-top {
+    margin-top: 20px;
+  }
+  .btn-center-forgot {
+text-align: center;
+  }
+button.btn-cancel-account {
+    padding: 0px!important;
+    background: none!important;
+    color: #000!important;
+    border: none!important;
+  }
+  .model-popup h5.modal-title {
+    font-size: 14px;
+  }
+  .model-popup .form-control {
+    height: calc(1.2em + .75rem + 2px);
+  }
+  .model-popup .form-group div.invalid-feedback {
+      display:block;
+      width: 100%;
+      position: absolute!important;
+      margin-top: 0px;
+      font-size: 11px;
+  }
+  .right-side-button {
+    float: right;
+  }
+  .right-side-button button.btn-changepass {
+    font-size: 12px;
+    background: #4c4c4c;
+    border: none;
+  }
+  .right-side-button button.cancel-btn-pass {
+    background: #fff0;
+    color: #4c4c4c;
+    font-size: 12px;
+    border: none;
+  }
+  .right-side-button button.cancel-btn-pass:hover, .right-side-button button.cancel-btn-pass:focus, .right-side-button button.cancel-btn-pass:active {
+    background: #fff0!important;
+    color: #4c4c4c!important;
+  }

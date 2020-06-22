@@ -1,0 +1,117 @@
+.property-search-list {
+    padding-left: 4px!important;
+    padding-right: 4px!important;
+}
+.property-listing-dashboard .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.5%;
+    width:70px;
+    position: absolute;
+  }
+  .property-listing-dashboard .heading h5 span{
+      color:#3797dd;
+  }
+  .property-listing-dashboard .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 16px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+.property-search-form {
+    margin: 20px 0 25px 0;
+}
+.property-search-form .col-md-12 {
+      text-align: right;
+}
+.table-property-search table thead tr th {
+    background-color: #3797dd;
+    padding: 8px 14px;
+    color: #fff;
+    font-weight: 600;
+    font-size:14px
+}
+.table-property-search table tbody tr td {
+    padding: 3px 14px;
+}
+.table-property-search table tbody button {
+    background-color: #fff0;
+    border: none;
+}
+.table-property-search table tbody button:hover {
+    background-color: #fff0;
+    border: none;
+}
+.table-property-search table tbody tr:nth-child(odd) {
+    background: #ececec;
+}
+.table-property-search {
+    margin-bottom: 30px;
+}
+/*.table-property-search button:not(:disabled):not(.disabled):active, .show> {
+    color: #fff;
+    background-color: #fff0;
+    border-color: #fff0;
+}*/
+.property-box .form-check-input {
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: 0.75rem;
+}
+.property-description {
+    width: 100%;
+    height: 160px;
+}
+.table-property-search .table-button {
+    padding: 0px;
+    color: #3797dd;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+/*scroll table */
+
+.table-property-croll table tbody div button {
+    background: #f0f0f0!important;
+    padding: 0px 10px!important;
+    font-size: 13px!important;
+    color: #00000082!important;
+    font-weight: 600!important;
+    border: 1px solid #0000003d!important;
+}
+.documents-font-size {
+    font-size: 16px;
+}
+.room-for-expansion-font legend {
+font-size:12px;
+margin-bottom: 0px;
+}
+.description-box-height {
+    height: 150px!important;
+}
+/* MVP Radius */
+.radius-scroll .PrivateValueLabel-circle-224 {
+    width: 14px!important;
+    height: 14px!important;
+    position: absolute;
+    top: 26px!important;
+    left: -7px!important;
+    display: flex;
+    transform: rotate(-45deg);
+    align-items: center;
+    border-radius: 50% 50% 50% 0;
+    justify-content: center;
+    background-color: currentColor;
+}
+.radius-scroll {
+    background-color: #3797dd!important;
+    padding: 0!important;
+    margin: 18px 0;
+}
+.error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}

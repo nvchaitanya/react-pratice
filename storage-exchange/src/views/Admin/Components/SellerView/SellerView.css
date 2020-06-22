@@ -1,0 +1,130 @@
+.seller-view-admin {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.seller-view-head .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 6%;
+    width:76px;
+    position: absolute;
+  }
+.seller-view-head .heading h5 span{
+      color:#3797dd;
+  }
+.seller-view-head .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+.seller-view-head h6 {
+      padding-top: 20px;
+  }
+.seller-view-head h6 a {
+      color:#4c4c4c;
+      font-size: 14px;
+  }
+.seller-view-head h6 a:hover {
+    color:#3797dd;
+    text-decoration: none;
+}
+.seller-view-head .heading-right-buyer {
+    text-align: right;
+}
+.seller-view-head .heading-right-seller {
+    text-align: right;
+}
+.seller-view-admin img.seller-img {
+    vertical-align: middle;
+    padding: 8px 0;
+    cursor: pointer;
+    content: '';
+    width: 13px;
+}
+.seller-view-details h5.heading-buyer label {
+    text-transform: capitalize;
+}
+.seller-view-details h5 {
+    margin-bottom: 0px;
+}
+.seller-view-details  {
+    padding-top: 15px;
+}
+.seller-view-details {
+    font-size: 16px;
+    font-weight: 500;
+}
+.container-border-left-seller {
+    border-left: 3px solid #3797dd;
+    color: black;
+    padding-left: 11px;
+    margin-right: 15px!important;
+    margin-left: 15px!important;
+    background-color: #e0dfdf40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.seller-view-admin .img-icon-buy {
+    padding-top: 0px;
+    padding-bottom: 3px;
+  }
+.create-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #3797dd;
+}
+.margin-top-seller {
+    margin-bottom: 10px;
+}
+.link-space a {
+    padding: 6px 12px;
+}
+/*table-scroll*/
+.table-space-padding {
+    padding: 0px!important;
+} 
+.table-space-padding table tbody tr td {
+    padding: 0px 14px!important;
+}
+.table-seller-padding table tbody tr td {
+    padding: 8px 14px!important;
+}
+.table-seller-padding h4 {
+    font-size: 14px;
+}
+.property-information-head {
+    font-size: 14px!important;
+}
+/*table-scroll-end*/
+.table-no-border table tr {
+    border: none;
+}
+.table-no-border table tr td:first-child {
+    vertical-align: top;
+    font-size: 14px;
+    padding: 8px;
+}
+.table-no-border table tr td:last-child {
+    padding-left:6px ;
+    font-size: 12px;
+    padding: 8px;
+    color: #4c4c4c;
+}
+.box-content-msg {
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+.msg-icon {
+    width: 12px;
+    vertical-align: middle;
+    margin-bottom: 1px;
+}
+.no-found {
+    padding: 21px;
+    border: 1px solid #d7d7d8;
+    border-radius: 5px;
+    margin-top: 7px;
+}

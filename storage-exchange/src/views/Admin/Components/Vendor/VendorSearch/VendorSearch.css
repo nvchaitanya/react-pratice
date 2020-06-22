@@ -1,0 +1,113 @@
+.vendors-search-list {
+    padding-left: 4px!important;
+    padding-right: 4px!important;
+}
+.vendor-listing-dashboard .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.5%;
+    width:70px;
+    position: absolute;
+  }
+  .vendor-listing-dashboard .heading h5 span{
+      color:#3797dd;
+  }
+  .vendor-listing-dashboard .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 16px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+  }
+.vendor-form label {
+    margin-bottom: 0px;
+}
+.vendor-form {
+ /* padding: 15px 0px;
+  background-color: #f8f8f8;*/
+  margin: 20px 0 25px 0
+}
+.vendor-form .btn-search {
+    margin-top: 24px;
+}
+.table-vendor-search table thead tr th {
+    background-color: #3797dd;
+    padding: 8px 14px;
+    color: #fff;
+    font-weight: 600;
+    font-size:14px
+}
+.table-vendor-search table tbody tr td {
+    padding: 3px 14px;
+}
+.table-vendor-search table tbody button {
+    background-color: #fff0;
+    border: none;
+}
+.table-vendor-search table tbody button:hover {
+    background-color: #fff0;
+    border: none;
+}
+.table-vendor-search table tbody tr:nth-child(odd) {
+    background: #ececec;
+}
+/*table scroll */
+.table-category table thead tr th {
+    background-color: #3797dd;
+    padding: 8px 14px;
+    color: #fff;
+    font-weight: 600;
+    font-size:14px
+}
+.table-category table tbody tr td {
+    padding: 3px 14px;
+}
+.table-category table tbody button {
+    background-color: #fff0;
+    border: none;
+}
+.table-category table tbody button:hover {
+    background-color: #fff0;
+    border: none;
+}
+.table-category table tbody tr:nth-child(odd) {
+    background: #ececec;
+}
+.table-category table tbody {
+    display: inline-block;
+  height:200px;
+  overflow:auto;
+}
+.table-category thead, tbody tr {
+    display:table;
+  width:100%;
+  table-layout:fixed;
+  }
+.table-category thead {
+    width: calc( 100% - 0em );
+  }
+.table-category tbody tr {
+    display: table;
+}
+.table-width-header {
+    width: 15%!important;
+}
+.table-width-header .PrivateSwitchBase-root-207 {
+    padding: 0px!important;
+}
+/*table scro;; end */
+.table-vendor-search {
+    margin-bottom: 30px;
+}
+.word-brk {
+    word-break: break-all;
+    width: 200px;
+}
+.MuiCheckbox-colorSecondary.Mui-checked {
+    color: #3797dd!important;
+}
+
+.float-style-right {
+    float: right;
+    margin-top: 10px;
+}

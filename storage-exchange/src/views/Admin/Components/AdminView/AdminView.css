@@ -1,0 +1,37 @@
+.admin-dash-details {
+    padding: 15px 0px;
+}
+.admin-dash-details label {
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+.admin-dash-details .btn-search {
+    margin-top: 24px;
+}
+.btn-search button {
+    margin-right: 5px;
+}
+.btn-reset {
+    background: none!important;
+    color: #1e1f1f!important;
+    border: none!important;
+    font-size: 12px!important;
+    padding: 0!important;
+    margin-left: 5px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    box-shadow: none!important;
+}
+.search-butn {
+    background-color: #4c4c4c!important;
+    border-color: #4c4c4c!important;
+    font-size: 12px!important;
+}
+.search-butn:hover {
+    background-color: #3797dd!important;
+    border-color: #3797dd!important;
+}
+.hidden-field-admin {
+    margin-top: -1rem;
+}

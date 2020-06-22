@@ -1,0 +1,69 @@
+.dealtracker-search-list {
+    padding-left: 4px!important;
+    padding-right: 4px!important;
+}
+.dealtracker-listing-dashboard .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 0.5%;
+    width: 60px;
+    position: absolute;
+  }
+  .dealtracker-listing-dashboard .heading h5 span{
+      color:#3797dd;
+  }
+  .dealtracker-listing-dashboard .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+.dealtracker-form {
+  margin: 20px 0 ;
+}
+.dealtracker-form .btn-search {
+    margin-top: 24px;
+}
+.table-dealtracker-search {
+    margin-bottom: 30px;
+}
+.table-deal table tbody tr td {
+    padding: 10px 14px!important;
+    font-size: 12px;
+}
+.table-deal table tbody tr td button {
+    padding: 0px!important;
+    height: 18px;
+    display: flex;
+}
+.word-brk {
+    word-break: break-all;
+    width: 200px;
+}
+.float-style-right {
+    float: right;
+    margin-top: 10px;
+}
+.select-options .MuiSelect-selectMenu {
+    font-size: 12px;
+    padding: 0px;
+}
+.list-select-options .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected {
+    font-size: 12px;
+}
+.MuiMenuItem-root {
+    font-size: 12px!important;
+}
+button.deal-button:focus {
+    background-color: #fff0!important;
+}
+.disply-dealbtn {
+    display: inline-flex;
+}
+.disply-dealbtn .deal-button {
+    margin-right: 20px;
+}
+.disply-dealbtn button.deal-view-btn {
+    margin-left: auto;
+}

@@ -1,0 +1,169 @@
+.buyer-view-admin {
+    padding-left: 9px;
+    padding-right: 9px;
+    margin-bottom: 30px;
+}
+.buyer-view-head .heading .heading-broder {
+    content: '';
+    background: #3a3a3c;
+    height: 6%;
+    width:60px;
+    position: absolute;
+  }
+  .buyer-view-head .heading h5 span{
+      color:#3797dd;
+  }
+  .buyer-view-head .heading h5 {
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .buyer-view-head h6 {
+      padding-top: 20px;
+  }
+  .buyer-view-head h6 a {
+      color:#4c4c4c;
+      font-size: 14px;
+  }
+  .buyer-view-head h6 a:hover {
+      color:#3797dd;
+      text-decoration: none;
+  }
+  .buyer-view-head .heading-right-buyer {
+      text-align: right;
+  }
+  .buyer-view-details {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .buyer-view-details h5 {
+      font-size: 12px;
+      font-weight: 400;
+  }
+  .buyer-status-radio label {
+      font-size: 14px;
+  }
+  .buyer-status-radio .MuiRadio-colorSecondary.Mui-checked {
+    color: #3797dd!important;
+  }
+  .buyer-status-radio .MuiSvgIcon-root {
+      width: 18px!important;
+      height: 18px!important;
+  }
+  .buyer-view-details h5 span {
+      font-size: 12px;
+      font-weight: 600;
+  }
+  .buyer-view-details .col-md-4 {
+    border-right: 1px solid #ddd;
+  }
+  .buyer-view-details .col-sm-6 {
+    border-right: 1px solid #ddd;
+  }
+  .buyer-view-details .col-sm-12 {
+      padding: 5px;
+  }
+  .buyer-view-details .col-sm-12 h4 {
+      font-size: 14px;
+}
+  .buyer-view-admin img.buyer-img {
+      vertical-align: middle;
+      padding: 8px 0;
+      cursor: pointer;
+      content: '';
+      width: 13px;
+  }
+  .buyer-view-admin .img-icon-buy {
+    padding-top: 0px;
+    padding-bottom: 3px;
+  }
+.table-buyer-view table thead tr th {
+    background-color: #3797dd;
+    padding: 8px 14px;
+    color: #fff;
+    font-weight: 600;
+    font-size:14px
+}
+.table-buyer-view table tbody tr td {
+    padding: 10px 14px!important;
+    font-size: 12px;
+}
+.table-buyer-view thead tr th {
+    background-color: #3797dd;
+    padding: 6px 14px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.table-buyer-view table tbody button {
+    background-color: #fff0;
+    border: none;
+}
+.table-buyer-view table tbody button:hover {
+    background-color: #fff0;
+    border: none;
+}
+.table-buyer-view table tbody tr:nth-child(odd) {
+    background: #ececec;
+}
+td.button-table-buyer a {
+    background-color: #3a3a3c!important;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+td.button-table-buyer a:hover {
+    background-color: #3797dd!important;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #3a3a3c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.table-space-buyer {
+    margin: 20px 0;
+}
+.table-space-buyer h4 {
+    font-size: 14px;
+}
+.table-space-buyer table {
+    margin-top: 10px;
+}
+.no-records-found {
+    color:#4c4c4c;
+    font-size: 14px;
+    text-align: center;
+}
+.label-break-buyer {
+    word-break: break-all;
+    padding:6px;
+    width: 281px;
+    max-width: 100%;
+}
+.select-category-buyer {
+    vertical-align: top!important;
+    font-size: 12px!important;
+}
+.hidden-field-buyer {
+    margin-top: -1rem;
+}
+.margin-top-buyer {
+    margin-top: 15px;
+}
+.description-box-height {
+    height: 150px!important;
+}
+.leftandright-nomargin {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.error{
+    color: #dc3545;
+  }

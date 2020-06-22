@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  margin: 0;  
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html body{
+  font-family: 'Roboto' !important;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.page-loading {
+  position: fixed;
+  top: 50%;
+  left: calc(50% - -71px);
+  margin-top: -100px;
+  margin-left: -150px;
+  width: 142px;
+  height: 142px;
+  background-image: url('../src/Assets/Img/loader.gif');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  z-index: 999999;
+  background-size: 50px auto;
+}
+.form-back-shadow {
+  border: 1px solid #fff;
+  margin: 0 0 25px 0;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000054;
+  }
+  button:focus {
+    border-color: #fff0!important;
+    box-shadow: none!important;
+}
+.heading h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+table tbody {
+  border-bottom: 1px solid #ececec!important;
+}
+table tfoot tr {
+  border: none!important;
+}
+table .MuiTableCell-root {
+  border-bottom: none!important;
+}
+.create-new {
+  font-size: 14px;
+}
+.create-new h5 {
+  font-size: 14px;
+}
+.create-new button {
+  font-size: 14px;
+}
+.create-new .form-group label {
+  margin-bottom: 0px;
+}
+.create-new label {
+  margin-bottom: 0px;
+  font-size:12px;
+}
+.create-new button.close:focus {
+  border: none!important;
+  outline: none;
+}
+.form-group label {
+  font-size: 12px;
+  margin: 0px;
+}
+/*table-scroll*/
+.table-scroll table {
+  border-bottom: 1px solid #6d6d6f70;
+  margin: 20px 0 0 0;
+}
+.table-scroll table tbody tr td {
+  padding: 6px 6px 6px 16px;
+  /* display: table-cell; */
+  vertical-align: middle;
+  font-size: 12px;
+  min-width: 163px;
+  word-break: break-all
+}
+.table-scroll table tbody tr:nth-child(odd) {
+  background: #eaeaec;
+}
+.table-scroll tbody {
+  display: inline-block;
+max-height:268px;
+overflow:auto;
+}
+.table-scroll thead, .table-scroll tbody tr {
+  display:table;
+width:100%;
+table-layout:fixed;
+}
+.table-scroll thead {
+  width: calc( 100% - 0em );
+  background-color: #3797dd;
+}
+.table-scroll thead tr th {
+  padding: 10px;
+  display: table-cell;
+  color: #fff;
+  font-size: 14px;
+}
+.table-scroll tbody tr {
+  display: table;
+}
+.table-scroll tfoot tr td {
+  border-bottom: 1px solid #fff0!important;
+}
+.no-button-background {
+  background-color: #fff0!important;
+  box-shadow: none!important;
+  border: none!important;
+  padding: 0px!important;
+  cursor:pointer!important;
+  margin: 0 20px 0 0 !important;
+}
+.form-back-shadow .form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.2em + .88rem + 0px);
+  padding: .375rem .75rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.create-new .form-control {
+  height: calc(1.2em + .88rem + 0px);
+  padding: .375rem .75rem;
+  font-size: 14px;
+}
+.error-paragraph {
+  text-align: center;
+  font-size: larger;
+  color: #4c4c4c;
+  font-weight: 400;
+  margin: 20px;
+}
+.form-control label {
+  color: #4c4c4c!important;
+}
+.react-confirm-alert-overlay {
+  background:#0000008a!important;
+  animation: react-confirm-alert-fadeIn 0.1s 0.2s forwards!important;
+}
+.react-confirm-alert-body {
+  box-shadow: none!important;
+}
+.react-confirm-alert h1 {
+  font-size: 16px!important;
+  font-weight: 600;
+}
+.react-confirm-alert-button-group {
+  display: block!important;
+  text-align: right;
+}
+.page-height-fixed {
+  min-height: calc(84vh - 208px);
+}
+.create-new .form-group div.invalid-feedback {
+  display:block;
+  width: 100%;
+  position: absolute!important;
+  margin-top: 0px;
+  font-size: 11px
+}
